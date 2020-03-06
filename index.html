@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Final Assessment</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="input-form">
+            <form>
+                <div class="row">
+                    <label for="display_header"></label><br>
+                    <input type="text" id="first-input" name="display_header" placeholder="Hello World">
+                    <label for="header_color"></label><br>
+                    <input type="color" id="h-color" name="header_color" value="#e66465">
+                </div>
+                <br>
+                <div class="row">
+                    <label for="display_paragraph"></label><br>
+                    <textarea name="display_paragraph" id='text-input' placeholder="Write something.." style="height:200px"></textarea>
+                    <label for="content_color"></label><br>
+                    <input type="color" id="p-color" name="content_color" value="#e66465">
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+        <div class="display-form">
+            <div class="display content-flex">
+                <label for="display_header"></label><br>
+                <h1 id='display-header' name='display_header'></h1>
+                <label for="display_paragraph"></label><br>
+                <p id='display-paragraph' name='display_paragraph'></p>
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="./js/event.js"></script>
+</body>
+</html>
